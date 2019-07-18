@@ -1,0 +1,123 @@
+@charset "UTF-8";
+body, ul, p, h1, h2, h3, h4, h5, h6, td, th, dl, dd, dt, input, ol, div, a, img {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-size: 12px;
+  font-family: Helvetica, Tahoma, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "微软雅黑", "宋体";
+  color: #333;
+  background-color: #fff;
+  min-width: 1200px;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+img {
+  border-width: 0px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix:after {
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0;
+}
+
+.Container {
+  width: 1200px;
+  margin: 0px auto;
+  overflow: hidden;
+}
+
+.clear {
+  clear: both;
+  display: block;
+  font-size: 0;
+  height: 0;
+  line-height: 0;
+  overflow: hidden;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+body {
+  min-width: 1200px;
+  overflow-x: hidden;
+}
+
+.abs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+.el {
+  word-break: keep-all;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#main {
+  position: relative;
+}
+
+.box {
+  /*padding可以用offsetWidth和offsetHeight的时候算进去*/
+  padding: 15px 0 0 15px;
+  float: left;
+}
+
+.pic {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 5px #ccc;
+          box-shadow: 0 0 5px #ccc;
+}
+
+.pic img {
+  width: 165px;
+  height: auto;
+}
+
+/*# sourceMappingURL=index.css.map */

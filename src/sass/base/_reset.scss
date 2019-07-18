@@ -1,0 +1,23 @@
+body,ul,p,h1,h2,h3,h4,h5,h6,td,th,dl,dd,dt,input,ol, div,a,img { margin: 0px; padding: 0px; }
+body { font-size: 12px; font-family: Helvetica, Tahoma, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "微软雅黑", "宋体"; color: #333; background-color: #fff; min-width: 1200px;}
+ul,li {list-style: none; }
+a { text-decoration: none; color: inherit; cursor: pointer;}
+img { border-width: 0px; }
+table { border-collapse: collapse; }
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+input::-ms-clear{display:none;}
+.clearfix {
+	zoom:1;
+}
+.clearfix:after {
+	display: block;
+	clear: both;
+	content: "";
+	visibility: hidden;
+	height: 0;
+}

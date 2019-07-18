@@ -1,0 +1,11 @@
+@mixin op($opacity) {
+    opacity: $opacity;
+    // 兼容IE
+    filter: alpha(opacity=$opacity * 100);
+}
+@mixin ops($opacity, $scale) {
+    opacity: $opacity;
+    // 兼容IE
+    filter: alpha(opacity=$opacity * 100);
+    transform: scale($scale);
+}

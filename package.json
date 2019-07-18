@@ -1,0 +1,29 @@
+{
+  "name": "header-footer",
+  "version": "1.0.0",
+  "description": "专题统一头部底部",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "youzhicai",
+    "header",
+    "footer"
+  ],
+  "author": "Bill",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.5",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-load-plugins": "^1.4.0",
+    "gulp-sass": "^3.0.0",
+    "gulp-sourcemaps": "^1.9.1",
+    "gulp-util": "^3.0.7",
+    "gulp-watch-path": "^0.1.0",
+    "node-sass": "^4.1.1",
+    "sprity": "^1.0.8",
+    "stream-combiner2": "^1.1.1"
+  }
+}
