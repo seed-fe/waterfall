@@ -6,11 +6,7 @@
 	4、从第n+1个盒子开始，将其放到高度最小的那一列，其left就是第minHIndex个盒子的offsetLeft；
 	5、之前高度最小的列的高度值加上第新放置的盒子的高度得到该列的新高度值
  */
-/* 
-	瀑布流加载思路：
-	1、不是滚动到最底部才加载；
-	2、监听滚动事件，判断页面滚动已经超过了最下面的一个盒子的一半高度就加载
- */
+
 window.onload = function() {
 	var wContainer = document.getElementById('main'),
 		// 模拟JSON格式的后台数据
@@ -77,7 +73,11 @@ function getMinHIndex(arr, val) {
 		}
 	}
 }
-
+/* 
+	瀑布流加载思路：
+	1、不是滚动到最底部才加载，那样用户体验不连贯；
+	2、监听滚动事件，判断页面滚动到已经超过了最下面的一个盒子的一半高度就加载
+ */
 function checkOnScroll () {
 	var wBoxes = document.getElementsByClassName('box')
 	// console.log(wBoxes)
@@ -85,3 +85,9 @@ function checkOnScroll () {
 		pageHeight = document.documentElement.scrollTop + document.documentElement.clientHeight
 	return (lastBoxHalfH < pageHeight) ? true:false
 }
+/* 
+	遗留问题：
+	1、响应式布局
+	2、jQuery实现
+	3、CSS3实现
+ */
